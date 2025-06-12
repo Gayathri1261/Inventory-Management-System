@@ -80,4 +80,4 @@ If you’re sure, click “Delete” again. If not, just click “Back”.
 
 ![image alt](https://github.com/Gayathri1261/Inventory-Management-System/blob/main/Delete.PNG?raw=true)
 
-⚠ Note: Deleting an item removes it permanently, so double-check before you confirm.
+ Note: Deleting an item removes it permanently, so double-check before you confirm.
