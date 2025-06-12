@@ -58,6 +58,8 @@ Make your changes and click “Update” or “Save”.
 
 The item will be updated and you’ll go back to the list.
 
+![image alt](https://github.com/Gayathri1261/Inventory-Management-System/blob/main/Edit.PNG?raw=true)
+
 **View Item Details**
 Where: Click the “Details” button for any item.
 
