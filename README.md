@@ -38,6 +38,8 @@ Supplier (if available)
 
 You’ll also see buttons to Edit, Delete, or View more info about each item.
 
+![image alt](https://github.com/Gayathri1261/Inventory-Management-System/blob/main/Items%20List.PNG?raw=true)
+
 ** Add a New Item**
 Where: Look for a button like “Add Item” or “Create New”.
 
