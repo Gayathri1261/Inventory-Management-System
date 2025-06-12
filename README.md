@@ -15,8 +15,6 @@ Once it loads, you're ready to begin!
 **Home Page**
 When the app first opens, you’ll see the Home Page. It may contain a short message or welcome note, along with menu links to the main pages—especially the one that shows your item list.
 
-**What You Can Do**
-Here are the main things you’ll be doing in the system:
 
 **View All Items**
 Where: Click the "Items" or "Inventory" option in the menu.
