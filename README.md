@@ -67,6 +67,8 @@ You’ll get a full view of that item’s info.
 
 Use the “Back” link to return to the list when you're done.
 
+![image alt]()
+
 **Delete an Item**
 Where: On the item list, click “Delete” next to the item you want to remove.
 
