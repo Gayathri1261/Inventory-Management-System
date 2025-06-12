@@ -47,6 +47,8 @@ Fill in things like name, quantity, price, etc.
 
 Once done, click “Save” or “Create” to add it to your list.
 
+![image alt](https://github.com/Gayathri1261/Inventory-Management-System/blob/main/Create.PNG?raw=true)
+
 **Update an Item**
 Where: On the list of items, click the “Edit” button next to the item you want to change.
 
