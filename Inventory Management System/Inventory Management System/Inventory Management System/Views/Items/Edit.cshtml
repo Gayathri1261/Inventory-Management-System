@@ -1,0 +1,147 @@
+﻿@model Inventory_Management_System.Models.Item
+
+@{
+    ViewData["Title"] = "Edit Item";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('/lib/GC3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #333;
+    }
+
+    .form-container {
+        max-width: 500px;
+        margin: 40px auto;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h4 {
+        text-align: center;
+        color: #222;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+        .form-group label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 8px 12px;
+        font-size: 0.95rem;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        color: #333;
+    }
+
+        .form-control:focus {
+            border-color: #1976d2;
+            outline: none;
+        }
+
+    .text-danger {
+        color: #d32f2f;
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        background-color: #4caf50;
+        color: white;
+        font-weight: 600;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease, box-shadow 0.2s;
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: 0 5px 10px rgba(76, 175, 80, 0.3);
+    }
+
+        .btn-primary:hover {
+            background-color: #388e3c;
+            box-shadow: 0 8px 15px rgba(56, 142, 60, 0.5);
+        }
+
+    .back-link {
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: #1976d2;
+        font-weight: 600;
+    }
+
+        .back-link:hover {
+            color: #0d47a1;
+        }
+</style>
+
+<div class="form-container">
+    <h1>Edit</h1>
+    <h4>Item</h4>
+    <hr />
+    <form asp-action="Edit">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" />
+
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Quantity"></label>
+            <input asp-for="Quantity" class="form-control" />
+            <span asp-validation-for="Quantity" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Category"></label>
+            <input asp-for="Category" class="form-control" />
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Supplier"></label>
+            <input asp-for="Supplier" class="form-control" />
+            <span asp-validation-for="Supplier" class="text-danger"></span>
+        </div>
+
+        <input type="submit" value="Save Changes" class="btn btn-primary" />
+    </form>
+
+    <a asp-action="Index" class="back-link">⬅ Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

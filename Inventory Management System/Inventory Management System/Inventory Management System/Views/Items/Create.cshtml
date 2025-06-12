@@ -1,0 +1,155 @@
+﻿@model Inventory_Management_System.Models.Item
+
+@{
+    ViewData["Title"] = "Create Item";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('/lib/GC3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #333;
+    }
+
+    .main-content {
+        padding-top: 80px;
+    }
+
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        margin: 50px auto;
+        width: 90%;
+        max-width: 600px;
+    }
+
+    h1, h4 {
+        color: #b71c1c;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        border-color: #ccc;
+        margin: 20px 0;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+        .form-group label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+    .form-control {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 10px 14px;
+        font-size: 1rem;
+        width: 100%;
+        background-color: #fff;
+        color: #000;
+    }
+
+        .form-control:focus {
+            border-color: #b71c1c;
+            box-shadow: 0 0 4px rgba(183, 28, 28, 0.4);
+            outline: none;
+        }
+
+    .text-danger {
+        font-size: 0.9rem;
+        color: #d32f2f;
+    }
+
+    .btn-primary {
+        background-color: #b71c1c;
+        color: white;
+        font-weight: 600;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+        .btn-primary:hover {
+            background-color: #7f0000;
+        }
+
+    .back-link {
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: #b71c1c;
+        font-weight: 600;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="main-content">
+    <div class="form-container">
+        <h1>Create</h1>
+        <h4>Item</h4>
+        <hr />
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <input asp-for="Category" class="form-control" />
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Supplier" class="control-label"></label>
+                <input asp-for="Supplier" class="form-control" />
+                <span asp-validation-for="Supplier" class="text-danger"></span>
+            </div>
+
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </form>
+
+        <a asp-action="Index" class="back-link">← Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

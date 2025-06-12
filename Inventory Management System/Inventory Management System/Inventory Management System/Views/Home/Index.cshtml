@@ -1,0 +1,37 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+}
+<style>
+		body {
+				margin: 0;
+				padding: 0;
+				font-family: 'Segoe UI', sans-serif;
+				background-image: url('/lib/Welcome1.jpg'); 
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				color: #ffffff;
+	}
+		.welcome-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 90vh; 
+				text-align: center;
+				padding-top: 60px;
+				text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+
+	}
+		.welcome-line {
+				font-size: 4rem;
+				font-weight: bold;
+				margin: 10px 0;
+	}
+</style>
+
+<div class="welcome-container">
+	<div class="welcome-line">Welcome to</div>
+	<div class="welcome-line">Inventory Management System</div>
+</div>
