@@ -4,13 +4,7 @@ The Inventory Management System is a web-based tool made to help you keep track 
 
 **How to Start Using It**
 ---
-To use the system:
-
-Open any modern web browser (like Chrome or Edge).
-Go to the web address provided (e.g., something like http://yourproject.azurewebsites.net or http://localhost:5001 if it's running on your own computer).
-Once it loads, you're ready to begin!
-
-**Navigating the App**
+```Navigating the App```
 
 **Home Page**
 When the app first opens, you’ll see the Home Page. It may contain a short message or welcome note, along with menu links to the main pages—especially the one that shows your item list.
