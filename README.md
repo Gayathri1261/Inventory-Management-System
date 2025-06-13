@@ -3,7 +3,7 @@ The Inventory Management System is a web-based tool made to help you keep track 
 ![image alt](https://github.com/Gayathri1261/Inventory-Management-System/blob/1b007491265d7386913118bc5ff1f23b91f130ae/HomePage.PNG)
 
 **How to Start Using It**
-
+---
 To use the system:
 
 Open any modern web browser (like Chrome or Edge).
